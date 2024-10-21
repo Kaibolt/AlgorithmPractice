@@ -112,10 +112,12 @@ function sumToN(n) {
 ---
 
 ### Practice Problem: Factorial of n
-
+# The product of an integer and all integers below it
 **Pseudocode**:
 ```
-
+Input n
+i = 0
+while i < n, 
 ```
 
 **JavaScript**:
