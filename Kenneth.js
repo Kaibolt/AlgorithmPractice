@@ -28,11 +28,15 @@ function rockPaperScissors(input) {
   let outcome;
 
   for (let i = 0; i <= random; i++) {
+    //Iteration
     if (i % 3 == 0) {
+      //Selection
       opponentChoice = "rock";
     } else if (i % 2 == 0) {
+      //Selection
       opponentChoice = "paper";
     } else {
+      //Selection
       opponentChoice = "scissors";
     }
   }
