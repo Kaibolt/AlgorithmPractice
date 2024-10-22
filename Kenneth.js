@@ -23,6 +23,7 @@ function returnInput(input) {
 }
 
 function rockPaperScissors(input) {
+  //Algorithm
   const random = Math.floor(Math.random() * 100);
   let opponentChoice;
   let outcome;
