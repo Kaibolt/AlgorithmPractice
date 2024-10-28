@@ -19,15 +19,43 @@ function ntB(n) {
     p2,
     p1,
     p0 = 0;
-  let t1 = 128;
   for (let i = 0; i < 7; i++) {
-    if ((n = t1 || n < t1)) {
+    if ((n = 128 || n < 128)) {
       p7++;
-      n = n - t1;
-      t1 = t1 / 2;
+      n = n - 128;
+    }
+    if ((n = 64 || n < 64)) {
+      p6++;
+      n = n - 64;
+    }
+    if ((n = 32 || n < 32)) {
+      p5++;
+      n = n - 32;
+    }
+    if ((n = 16 || n < 16)) {
+      p4++;
+      n = n - 16;
+    }
+    if ((n = 8 || n < 8)) {
+      p3++;
+      n = n - 8;
+    }
+    if ((n = 4 || n < 4)) {
+      p2++;
+      n = n - 4;
+    }
+    if ((n = 2 || n < 2)) {
+      p1++;
+      n = n - 2;
+    }
+    if ((n = 1 || n < 1)) {
+      p0++;
+      n = n - 1;
     }
   }
   return p0, p1, p2, p3, p4, p5, p6, p7;
 }
 
-console.log(ntB(128));
+console.log(ntB(200));
+// Disgusting code, wont even run.
+// Find out how to shorten this into a simple function
